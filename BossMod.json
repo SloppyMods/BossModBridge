@@ -1,0 +1,15 @@
+{
+  "Author": "SloppyMods",
+  "Name": "BossMod",
+  "InternalName": "BossMod",
+  "AssemblyVersion": "0.1.0.0",
+  "Description": "Bridge that registers as \"BossMod\" so addons which only recognise Veyn's BossMod work with BossMod Reborn. Provides the BossMod-only preset IPC endpoints and the /vbm and /vbmai command aliases. Requires BossMod Reborn enabled and the real BossMod disabled.",
+  "ApplicableVersion": "any",
+  "DalamudApiLevel": 15,
+  "Punchline": "Makes BossMod-only addons see BossMod Reborn.",
+  "Tags": [
+    "bossmod",
+    "bridge",
+    "ipc"
+  ]
+}

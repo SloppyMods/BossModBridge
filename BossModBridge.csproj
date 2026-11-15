@@ -1,0 +1,23 @@
+<Project Sdk="Dalamud.NET.Sdk/15.0.0">
+	<PropertyGroup>
+		<AssemblyName>BossMod</AssemblyName>
+		<RootNamespace>BossModBridge</RootNamespace>
+		<Version>0.1.0.0</Version>
+		<TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
+		<EnableWindowsTargeting>true</EnableWindowsTargeting>
+		<OutputPath>..\Build\BossModBridge\</OutputPath>
+		<Nullable>enable</Nullable>
+		<DalamudApiLevel>15</DalamudApiLevel>
+		<Author>SloppyMods</Author>
+		<Name>BossMod</Name>
+		<Punchline>Makes BossMod-only addons see BossMod Reborn.</Punchline>
+		<Description>Bridge that registers as "BossMod" so addons which only recognise Veyn's BossMod work with BossMod Reborn. Provides the BossMod-only preset IPC endpoints and the /vbm and /vbmai command aliases. Requires BossMod Reborn enabled and the real BossMod disabled.</Description>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="tests/**" />
+		<None Remove="tests/**" />
+		<Content Include="BossMod.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+</Project>
